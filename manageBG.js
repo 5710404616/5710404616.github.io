@@ -1,7 +1,10 @@
+
+
+
 $('#btn').click(function(){
 	// var dob = new Date('11/01/2000');
 	if ($('select').val() != ""){
-	var dob = new Date($('#birthday').val());
+	var dob = new Date("01/01/2010");
 	var today = new Date();
 	var age = Math.floor((today-dob) / (365.25 * 24 * 60 * 60 * 1000));
 		if (age <= 13){
@@ -19,15 +22,15 @@ $('#btn').click(function(){
 					$('body').css("background-color", "#6495ED");
 				}
 			}
-		$('#name').fadeOut(1300).hide(1000);
-		$('#form1').slideUp(1500).delay(5000).slideDown(4000);
-		$('#n').html("Firstname: " + $('#firstname').val() + " Lastname: " + $('#lastname').val() + "<br><br>");
+		// $('#name').fadeOut(1300).hide(1000);
+		// $('#form1').slideUp(1500).delay(5000).slideDown(4000);
+		// $('#n').html("Firstname: " + $('#firstname').val() + " Lastname: " + $('#lastname').val() + "<br><br>");
 			// $(document).ready(function(){
     		// $('#btn').click(function(){
         // $("#motto").load("motto/"+ '$('select').val()' + ".txt");
    			// });
 		// });
-		$('#motto').html("<p> คำขวัญประจำจังหวัด" + $('select').val() + "<br></p>").css("text-align", "center").fadeIn(1200).delay(4800).fadeOut(3800);
+		// $('#motto').html("<p> คำขวัญประจำจังหวัด" + $('select').val() + "<br></p>").css("text-align", "center").fadeIn(1200).delay(4800).fadeOut(3800);
 
 
 	}
